@@ -1,0 +1,600 @@
+<?php
+include_once('dbconnect.php');
+$countryresult =mysql_query("SELECT * FROM countries");
+?>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="CharityPress - Nonprofit, Crowdfunding & Charity HTML5 Template" />
+<meta name="keywords" content="building,business,construction,cleaning,transport,workshop" />
+<meta name="author" content="ThemeMascot" />
+
+<!-- Page Title -->
+<title>Bushra - Join Us</title>
+
+<!-- Favicon and Touch Icons -->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+<!-- Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="css/style-main.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="css/preloader.css" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+<!-- CSS | Theme Color -->
+<link href="css/colors/theme-skin-blue-gray.css" rel="stylesheet" type="text/css">
+
+
+<!-- CSS | Theme Color -->
+<link href="css/colors/theme-skin-blue.css" rel="stylesheet" type="text/css">
+
+<!-- external javascripts -->
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="js/jquery-plugin-collection.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="">
+<div id="wrapper" class="clearfix">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <div class="preloader-dot-loading">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
+  
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-top bg-theme-colored sm-text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5">
+                <li>
+                  <a href="#" class="text-white">FAQ</a>
+                </li>
+                <li class="text-white">|</li>
+                <li>
+                  <a href="#" class="text-white">Help Desk</a>
+                </li>
+                <li class="text-white">|</li>
+                <li>
+                  <a href="#" class="text-white">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget no-border m-0">
+              <ul class="social-icons icon-dark icon-circled icon-theme-colored icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
+                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle p-0 bg-lightest xs-text-center">
+      <div class="container pt-0 pb-0">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-6">
+            <div class="widget no-border m-0">
+              <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="javascript:void(0)"><img src="images/logo-wide.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="widget no-border m-0">
+              <div class="mt-10 mb-10 text-right flip sm-text-center">
+                <div class="font-15 text-black-333 mb-5 font-weight-600"><i class="fa fa-envelope text-theme-colored font-18"></i> Mail Us Today</div>
+                <a class="font-12 text-gray" href="#"> info@bushracharitabletrust.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="widget no-border m-0">
+              <div class="mt-10 mb-10 text-right flip sm-text-center">
+                <div class="font-15 text-black-333 mb-5 font-weight-600"><i class="fa fa-phone-square text-theme-colored font-18"></i> +91 78277 79999</div>
+                <a class="font-12 text-gray" href="#">Call us for more details!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <div class="widget no-border m-0">
+              <div class="mt-10 mb-10 text-right flip sm-text-center">
+                <div class="font-15 text-black-333 mb-5 font-weight-600"><i class="fa fa-building-o text-theme-colored font-18"></i> Trust Location</div>
+                <a class="font-12 text-gray" href="#"> Kodad,Nalgonda (Dt),Telangana State,India.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-light">
+        <div class="container">
+          <nav id="menuzord" class="menuzord red bg-light">
+            <ul class="menuzord-menu">
+              <li class="active"><a href="index.html">Home</a>
+               
+        <li><a href="about.html">About</a>
+        <ul class="dropdown">
+                      <li><a href="aims.html">Aims & Objectives</a></li></ul>
+        </li>
+        
+        <li><a href="#">Introduction To Islam</a>
+        <ul class="dropdown">
+                      <li><a href="intro.html">Introduction To Islam</a></li>
+            <li><a href="quran.html">Quran & Science</a></li>
+            </ul>
+        </li>
+        <li><a href="whygive.html"> Why Give </a>
+        
+        </li>
+        <li><a href="whyindia.html">Why India</a>
+        
+        </li>
+        <li><a href="#"> Volunteer</a>
+        
+        </li>
+        
+        <li><a href="#">Events & News</a></li>
+        
+         <li><a href="ourprojects.html">Our Projects</a></li>
+         
+         <li><a href="page-contact4.html">Contact </a></li>
+         
+       
+            </ul>
+            <ul class="list-inline pull-right flip hidden-sm hidden-xs">
+              <li>
+                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 bs-modal-ajax-load" data-toggle="modal" data-target="#BSParentModal" href="ajax-load/member-booking-form.html" >Donate Now</a>
+              </li>
+              <li>
+                <a class="btn btn-colored btn-flat btn-theme-colored mt-15" href="#" >Join Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>  
+
+  
+  <!-- Start main-content -->
+  <div class="main-content">
+
+    <!-- Section: inner-header -->
+    <section class="inner-header divider parallax layer-overlay overlay-white-8" data-bg-img="http://placehold.it/1920x1280">
+      <div class="container pt-90 pb-50">
+        <!-- Section Content -->
+        <div class="section-content pt-100">
+          <div class="row"> 
+            <div class="col-md-12">
+              <h3 class="title text-theme-colored" >Login/Register</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-40">
+            <h4 class="text-blue pt-10 mt-0 mb-30" >Login</h4>
+            <hr>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur elit.</p>-->
+            <span><p color="red" style="color: #e40505;font-weight: bold;font-size: 16px;
+text-align: center;margin-top: 10px;"><?php echo flash('errorloginmsg');?></p></span>
+            <form name="login-form" class="clearfix" id="Login-form" action="login.php" method="post">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="form_username_email" style="color:#036eac">Username/Email</label>
+                  <input id="form_username_email" name="email" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="form_password" style="color:#036eac">Password</label>
+                  <input id="form_password" name="password" class="form-control" type="password">
+                </div>
+              </div>
+              <div class="checkbox pull-left mt-15">
+                <label for="form_checkbox">
+                  <input id="form_checkbox" name="form_checkbox" type="checkbox">
+                  Remember me </label>
+              </div>
+              <div class="form-group pull-right mt-10">
+                <!--<button type="submit" class="btn btn-dark btn-sm">Login</button>-->
+              </div>
+              <div class="clear text-center pt-10">
+                <a class="text-theme-colored font-weight-600 font-12" href="#">Forgot Your Password?</a>
+              </div>
+              <div class="clear text-center pt-10">
+                <button class="btn btn-primary btn-lg btn-block mt-15" type="submit" data-bg-color="#3b5998">Login</button>
+                <!--<a class="btn btn-dark btn-lg btn-block no-border" href="#" data-bg-color="#00acee">Login with twitter</a>-->
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <form name="reg-form" class="register-form" id="register-form"   method="post" action="verify.php" enctype="multipart/form-data">
+              <div class="icon-box mb-0 p-0">
+                <a href="#" class="icon icon-bordered icon-rounded icon-sm pull-left mb-0 mr-10">
+                  <i class="pe-7s-users"></i>
+                </a>
+                <h4 class="text-blue pt-10 mt-0 mb-30">Don't have an Account? Register Now.</h4>
+              </div>
+              <hr>
+              <!--<p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi id perspiciatis facilis nulla possimus quasi, amet qui. Ea rerum officia, aspernatur nulla neque nesciunt alias.</p>-->
+              <div class="row">
+                <span><p color="red" style="color: #e40505;font-weight: bold;font-size: 16px;
+text-align: center;margin-top: 10px;"><?php echo flash('errormsg');?></p></span>
+<span><p color="red" style="color: #e40505;font-weight: bold;font-size: 16px;
+text-align: center;margin-top: 10px;"><?php echo flash('successmsg');?></p></span>
+                <div class="form-group col-md-6">
+                  <label style="color:#036eac">First Name</label>
+                  <input class="form-control"  name="firstname">
+                </div>
+                <div class="form-group col-md-6">
+                  <label style="color:#036eac">Last Name</label>
+                  <input  class="form-control" name="lastname">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="form_email" style="color:#036eac">Email</label>
+                  <input id="form_email"  class="form-control" type="email" name="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="form_choose_password" style="color:#036eac">Choose Password</label>
+                  <input   class="form-control" type="password" name="password" id="password">
+                </div>
+                <div class="form-group col-md-6">
+                  <label style="color:#036eac">Re-enter Password</label>
+                  <input   class="form-control" type="password"  name="confirmpassword">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="form_email" style="color:#036eac">Pic Upload</label>
+                  <input type='file' name="image" class="form-control"/>
+                </div>
+                <div class="form-group col-md-6">
+                  <img id="myImg" src="images/avatar.png" alt="your image" width="100px" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="form_email" style="color:#036eac">Country</label>
+                  <select name="countryId" class="form-control">
+                    <option value="" selected="">Select Country</option>
+    <?php 
+      while($result=mysql_fetch_row($countryresult)){
+    ?>
+        <option value="<?php echo $result[0]; ?>"><?php echo $result[2]; ?></option>
+        <?php }?>
+        </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary btn-lg btn-block mt-15" type="submit">Register Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+  
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-black-222">
+    <div class="container pt-70 pb-40">
+      <div class="row border-bottom-black">
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <img class="mt-10 mb-20" alt="" src="images/logo-wide-white.png">
+            <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+            <ul class="list-inline mt-5">
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Latest News</h5>
+            <div class="latest-posts">
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">Sustainable Construction</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">Industrial Coatings</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">Storefront Installations</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Useful Links</h5>
+            <ul class="list angle-double-right list-border">
+              <li><a href="#">Body Building</a></li>
+              <li><a href="#">Fitness Classes</a></li>
+              <li><a href="#">Weight lifting</a></li>
+              <li><a href="#">Yoga Courses</a></li>
+              <li><a href="#">Training</a></li>              
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Opening Hours</h5>
+            <div class="opening-hourse">
+              <ul class="list-border">
+                <li class="clearfix"> <span> Mon - Tues :  </span>
+                  <div class="value pull-right"> 6.00 am - 10.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Wednes - Thurs :</span>
+                  <div class="value pull-right"> 8.00 am - 6.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Fri : </span>
+                  <div class="value pull-right"> 3.00 pm - 8.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Sun : </span>
+                  <div class="value pull-right"> Colosed </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-10">
+        <div class="col-md-5">
+          <div class="widget dark">
+            <h5 class="widget-title mb-10">Subscribe Us</h5>
+            <!-- Mailchimp Subscription Form Starts Here -->
+            <form id="mailchimp-subscription-form-footer" class="newsletter-form">
+              <div class="input-group">
+                <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer" style="height: 45px;">
+                <span class="input-group-btn">
+                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit">Subscribe</button>
+                </span>
+              </div>
+            </form>
+            <!-- Mailchimp Subscription Form Validation-->
+            <script type="text/javascript">
+              $('#mailchimp-subscription-form-footer').ajaxChimp({
+                  callback: mailChimpCallBack,
+                  url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+              });
+
+              function mailChimpCallBack(resp) {
+                  // Hide any previous response text
+                  var $mailchimpform = $('#mailchimp-subscription-form-footer'),
+                      $response = '';
+                  $mailchimpform.children(".alert").remove();
+                  console.log(resp);
+                  if (resp.result === 'success') {
+                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  } else if (resp.result === 'error') {
+                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  }
+                  $mailchimpform.prepend($response);
+              }
+            </script>
+            <!-- Mailchimp Subscription Form Ends Here -->
+          </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="widget dark">
+            <h5 class="widget-title mb-10">Call Us Now</h5>
+            <div class="text-gray">
+              +61 3 1234 5678 <br>
+              +12 3 1234 5678
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title mb-10">Connect With Us</h5>
+            <ul class="social-icons icon-dark icon-circled icon-sm">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="font-11 text-black-777 m-0">Copyright &copy;2015 ThemeMascot. All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Help Desk</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="js/custom.js"></script>
+
+</body>
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script>
+$(document).ready(function()
+{
+
+
+    $("#register-form").validate
+    ({
+    
+            // Specify the validation rules
+            rules: 
+            {
+                firstname: "required",
+                lastname: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                confirmpassword: 
+                {                             
+                   required: true,
+                             equalTo: "#password"
+                },
+                countryId: 
+                {                             
+                   required: true,
+                },
+            },
+            
+            // Specify the validation error messages
+            messages: 
+            {
+                firstname: "Please enter your first name",
+                lastname: "Please enter your last name",
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long"
+                },
+                email: "Please enter a valid email address",
+                confirmpassword: {
+                required: "Please provide a confirm password",
+                equalTo:" Enter Confirm Password Same as Password",
+                },
+                countryId: {
+                    required: "Please Select Country",
+                },
+            },
+           
+      });
+
+$("#Login-form").validate
+    ({
+    
+            // Specify the validation rules
+            rules: 
+            {
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true
+                },
+            },
+            
+            // Specify the validation error messages
+            messages: 
+            {
+            email: "Please enter a valid email address",
+                password: {
+                    required: "Please provide a password"
+                },
+            },
+ });
+    
+});
+</script>
+
+<script>
+$(function () {
+    $(":file").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+
+function imageIsLoaded(e) {
+    $('#myImg').attr('src', e.target.result);
+};
+</script>
+</html>
